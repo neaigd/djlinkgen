@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.so
+*.DS_Store
+venv/
+env/
+.env*
+!/.env.example # Não ignorar os arquivos .env.example
+
+# Node (se usado para desenvolvimento web ou ferramentas)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Build artifacts
+dist/
+build/
