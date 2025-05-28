@@ -1,3 +1,9 @@
+
+<a href="https://chat.whatsapp.com/Imp8gTK8UR5JgAGSY19tzf" target="_blank">
+    <img src="https://github.com/p31x070/fact_chek/raw/main/LogoNIAD.png" class="logo" width="250"/>
+</a>
+
+
 # DJLinkGen-Web: Gerador de Links para Diário de Justiça (Interface Web)
 
 Esta é uma interface web de página única para gerar links de consulta de publicações no Diário de Justiça Eletrônico.

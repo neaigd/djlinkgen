@@ -1,4 +1,6 @@
-
+<a href="https://chat.whatsapp.com/Imp8gTK8UR5JgAGSY19tzf" target="_blank">
+    <img src="https://github.com/p31x070/fact_chek/raw/main/LogoNIAD.png" class="logo" width="250"/>
+</a>
 
 # Especificações Completas do Projeto: Gerador de Links para Diário de Justiça Eletrônico (DJLinkGen) - Versões CLI e Web
 
