@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJLinkGen-Web: Gerador de Links para Diário de Justiça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerador de Links para Diário de Justiça</h1>
+        </header>
+
+        <main>
+            <form id="djLinkForm">
+                <div class="form-group">
+                    <label for="oabNumber">Número da OAB:</label>
+                    <input type="text" id="oabNumber" name="oabNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="oabUF">UF da OAB:</label>
+                    <input type="text" id="oabUF" name="oabUF" required maxlength="2" pattern="[A-Za-z]{2}">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Lembrar meus dados</label>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Escolha o filtro de data:</legend>
+                    <div>
+                        <input type="radio" id="dateFilterOpen" name="dateFilter" value="open" checked>
+                        <label for="dateFilterOpen">Em Aberto (sem filtro de data)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dateFilterLast5" name="dateFilter" value="last5">
+                        <label for="dateFilterLast5">Últimos 5 dias</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dateFilterCustom" name="dateFilter" value="custom">
+                        <label for="dateFilterCustom">Definir intervalo personalizado</label>
+                    </div>
+                </fieldset>
+
+                <div id="customDateFields" class="form-group" style="display: none;">
+                    <div>
+                        <label for="startDate">Data de início (AAAA-MM-DD):</label>
+                        <input type="date" id="startDate" name="startDate">
+                    </div>
+                    <div>
+                        <label for="endDate">Data de fim (AAAA-MM-DD):</label>
+                        <input type="date" id="endDate" name="endDate">
+                    </div>
+                </div>
+
+                <button type="submit" id="generateLinkButton">Gerar Link</button>
+            </form>
+
+            <div id="resultArea" style="display: none;">
+                <h2>Link Gerado:</h2>
+                <a href="#" id="generatedLink" target="_blank"></a>
+                <button id="copyLinkButton">Copiar Link</button>
+            </div>
+
+            <div id="messageArea">
+                <!-- Messages will be displayed here -->
+            </div>
+        </main>
+
+        <footer>
+            <p>DJLinkGen-Web</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
