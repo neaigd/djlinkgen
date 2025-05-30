@@ -36,5 +36,7 @@ Este projeto é distribuído sob la licença MIT License (Placeholder).
 
 ## Documentação
 
-Temos aqui uma [](https://neaigd.github.io/djlinkgen-docs/docs/)
+Temos aqui uma [documentação](https://neaigd.github.io/djlinkgen-docs/docs/) dirigida especificamente para advogados que querem explorar automações e entender o projeto.
+
+O material aproveita a simplicidade do projeto para dar algumas dicas valiosas para quem quer acelerar o aprendizado e sair do zero. E claro, tudo usando ai como parceira.
 
